@@ -6,9 +6,9 @@ import BaseController from "../utils/BaseController.js";
 export class HousesController extends BaseController {
 
     constructor() {
-        super(`api/houses`)
+        super('api/houses')
         this.router
-            .get(``, this.getHouses)
+            .get("", this.getHouses)
             .post(``, this.createHouse)
             .get(`/:houseId`, this.getHouseById)
             .put(`/:houseId`, this.editHouse)
@@ -65,4 +65,5 @@ export class HousesController extends BaseController {
             next(error)
         }
     }
+
 }
